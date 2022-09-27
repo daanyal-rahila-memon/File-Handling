@@ -29,18 +29,21 @@ int main() // This is the main function which is the entry point of every progra
 
     if (f.is_open())    // it is to open the file for read/write
     {
-        while (!f.eof())
+        while (!f.eof())    // eof() is a function which tells the object to
+                            // read till the end of the file
         {
-            getline(f, data);
+            getline(f, data);   // getline() read a complete line from the file using the object "f", and store it to the string variable "data".
             cout << data << endl;
             count++;
         }
     }
-    else
+    else        // if file will not open, then the following block of code will     execute
+                // execute
     {
         cout << "BUSTED" << endl;
     }
     cout << count << endl;
+    
     system("pause");
     return 0;
 }
