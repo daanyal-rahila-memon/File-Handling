@@ -22,9 +22,12 @@ int main() // This is the main function which is the entry point of every progra
 
     // Note: If the File will not be available, then this command will automatically create a file of this name, and will open it to your program
 
-    // f.open("FileName", ios::in/out/app) => this command has 2 parameters
+    // f.open("FileName", ios::in/out/app/trunk) => this command has 2 parameters; 1st is the FileName along with extension like "FileName.txt". 2nd one is the mode in which you want to open the file in. There are mainly 4 modes, in (read), out (write), app (apoend the current added data with the previous one), and trunk (empty the file & write new entered data).
 
-    if (f.is_open())
+    // If you'll open the file with the object of "ifstream", then it'll open the file with the input mode (read), by default.
+    // If you'll open the file with the object of "ofstream", then it'll open the file with the output mode (write), by default.
+
+    if (f.is_open())    // it is to open the file for read/write
     {
         while (!f.eof())
         {
