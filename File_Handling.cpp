@@ -1,3 +1,6 @@
+// Following link is a helpful for File Handling in C++
+// https://www.w3schools.com/cpp/cpp_files.asp
+
 #include <iostream> // this library is use for stream operations in C++, such as 'cin' & 'cout'
 #include <fstream>  // this library is use for stream operations in a File through C++, such as 'ifstream' & 'ofstream'
 //#include <string>       // uncomment this library, if you gets any error regarding string library; This is been added to use 'string' class members in our program
